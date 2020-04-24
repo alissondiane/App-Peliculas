@@ -1,0 +1,20 @@
+<div class="jumbotron jumbotron-fluid bg-purple">
+    <div class="container">
+      <h1 class="display-4 font-weight-bold">PeliculasApp</h1>
+      <hr class="bg-white">
+      <p class="lead">Esta es un aplicación de películas.</p>
+    </div>
+</div>
+<div class="container">
+    <br>
+    <app-galeria [peliculas]="cartelera|slice:0:6" 
+    titulo='Películas en cartelera'></app-galeria>
+    <br>
+    <app-galeria [peliculas]="populares|slice:0:6" 
+    titulo='Películas populares'></app-galeria>
+
+    <app-galeria [peliculas]="popularesNinos|slice:0:6" 
+    titulo='Películas populares entre los más pequeños'></app-galeria>
+    
+  </div>
+  
